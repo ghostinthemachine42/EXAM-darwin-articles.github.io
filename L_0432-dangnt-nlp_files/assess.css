@@ -1,0 +1,201 @@
+
+#notifications {
+    position: fixed;
+    margin-left: 60%;
+    margin-right:0px;
+    float:right;
+    z-index: 2;
+}
+
+#toolbar-container { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+#toolbar-container div {
+    margin-right: 49px;
+    float: right;
+    padding: 4px;
+    clear: both;
+    background-color: #fff;
+}
+
+.toolbar-btn {
+    float:right;
+}
+
+.infopanel {
+    background-color:white;
+}
+
+.annotate .btn {
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+.annotate .btn.active {
+    background-color: #286090;
+    color: #fff;
+}
+
+.entity-snippet-li {
+    display: inline-table;
+    width: 100%;
+    text-align: left;
+    background-color: #dce7f1;
+    border-style: solid;
+    border-width: thin;
+    border-color: #a9d1f5;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 4px;
+    vertical-align: top;
+}
+
+.facet-select {
+    background-color:#fff;
+    width:330px;
+}
+
+.facet-option {
+    background-color:#fff;
+}
+
+.notes-div {
+}
+
+.notes-field{
+    background-color:#fff;
+    width:100%;
+}
+
+a {
+    color: #005dac;
+}
+
+a:visited {
+    color: #000520;
+}
+
+a:hover {
+    color: #005dac;
+    text-decoration: underline;
+}
+
+.passage-orig-entity {
+    font-weight:bold;
+}
+
+
+.active-display-btn {
+    background-color: #286090;
+    border-color: #286090;
+    color: #fff;
+}
+
+.hidden-display {
+    display:none;
+}
+
+.display-button-btn {
+    background-color: #dce7f1;
+    border-color: #a9d1f5;
+    color: #286090;
+}
+
+.display-button-btn:hover{
+    background-color: #dce7f1;
+    border-color: #a9d1f5;
+    color: #286090;
+}
+
+.hidden-panel {
+    display:none
+}
+
+.shown-panel {
+}
+
+.assessment-display {
+    background-color: white;
+}
+
+
+.hidable-hidden {
+    background-color: #286090;
+    border-color: #286090;
+    color: #fff;
+}
+
+.hidable-shown {
+    background-color: #dce7f1;
+    border-color: #a9d1f5;
+    color: #286090;
+}
+
+.queryterm-span {
+    background-color: #89ccf0;
+    color: #000;
+}
+
+.facetterm-span {
+    background-color: #b6e3ff;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container-annotate {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+.container-content {
+    margin-left: 50%;
+    padding: 5px;
+}
+
+.hidden-transition-annotation {
+    background-color:#a0a0a0;
+    display:none;
+}
+
+
+
+
+ol {
+    list-style-type: none;
+    counter-reset: ol-counter;
+}
+ol > li:before {
+    content: counter(ol-counter);
+    counter-increment: ol-counter;
+}
+
+
+.unjudged-transition-annotation {
+    background-color: #dbc7ff;
+}
+
+.unjudged-facet-annotation {
+    background-color: #dbc7ff;
+}
+
+
+/*.container-annotate{
+    display:none;
+}
+
+.transition-annotation{
+    display:none;
+}
+
+.hider{
+    display:none;
+}
+/*
