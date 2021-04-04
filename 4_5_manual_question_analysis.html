@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EXAM: Manual Question Analysis</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+	  table, th, td {border: 1px solid black;}
+  </style>
+</head>
+<body>
+<h1>Manual Question  Analysis</h1>
+<table>
+<tbody>
+<tr class="even">
+<td style="text-align: left;">Submitted Systems</td>
+<td style="text-align: center;">EXAM</td>
+<td style="text-align: center;">N-EXAM</td>
+<td style="text-align: center;">MQ</td>
+<td style="text-align: center;">Prec@R</td>
+<td style="text-align: center;">MAP</td>
+<td style="text-align: center;">nDCG20</td>
+<td style="text-align: center;">Rank</td>
+<td style="text-align: center;">ROUGE</td>
+<td style="text-align: center;">Rank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rerank2-bert</td>
+<td style="text-align: center;"><strong>0.17</strong></td>
+<td style="text-align: center;"><strong>1.03</strong></td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.18</td>
+<td style="text-align: center;">0.31</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dangnt-nlp</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">1.02</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;"><strong>0.28</strong></td>
+<td style="text-align: center;"><strong>0.25</strong></td>
+<td style="text-align: center;"><strong>0.38</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bert-cknrm-50</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.99</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.14</td>
+<td style="text-align: center;">0.11</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">irit-run2</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.94</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rerank3-bert</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.94</td>
+<td style="text-align: center;"><strong>0.5</strong></td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ict-b-convk</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.94</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">irit-run1</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.93</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bm25-populated</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.93</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.18</td>
+<td style="text-align: center;">0.14</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">unh-tfidf-ptsim</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.92</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.13</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">irit-run3</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.92</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">unh-bm25-ecmpsg</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.88</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.13</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0.43</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ecnu-bm25-1</td>
+<td style="text-align: center;">0.14</td>
+<td style="text-align: center;">0.87</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"><strong>0.49</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ict-b-drmmtks</td>
+<td style="text-align: center;">0.13</td>
+<td style="text-align: center;">0.80</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">uvabottomupchangeorder</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.04</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">uvabm25rm3</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.04</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">uvabottomup2</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">0.04</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gold articles</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+
+<p><i>System quality of 16 retrieve-and-generate algorithms submitted to TREC CAR Y3 as measured by our proposed EXAM metric on the TQA dataset, our proposed EXAM metric on manually created questions (MQ), the official TREC CAR assessments MAP, Prec@R, nDCG20, and the ROUGE-1 F1 baseline measure. Systems are ordered by EXAM, the best evaluation scores are bolded. Standard errors for all columns except MQ are about 0.01 or less</i></p>
+
+
+<br><br>
+
+<p>To test our method of writing manual follow-up questions, we use ten manually-crafted, natural-sounding questions to compare gold question EXAM rankings against TQA EXAM rankings, as shown in the above table. The manual question scores are labeled MQ. These ten questions were split evenly across two topics that the retrieve-and-generate systems had created articles for. Notably, not only do the manual question EXAM rankings correspond well to TQA EXAM rankings, but the official TREC CAR assessment rankings too. Given the limited number of questions, ties were frequent, and the standard error was relatively high, ranging between 0.3 and 0.0. Nonetheless, the data demonstrate that results on gold follow-up questions align with the official TREC CAR assessments. For example, Dangnt-nlp, rerank3-bert, and rerank2-bert, which are ranked highly both by the official TREC CAR assessments leaderboard and the TQA EXAM leaderboard, are in the top three of this evaluation. Likewise, uvabottomupchangeorder, uvabm25rm3, and uvabottomup2 are in the bottom three of the manual question leaderboard, the official TREC CAR assessment leaderboard, and TQA EXAM leaderboard.</p>
+<p>The hand-crafted questions were multiple choice and had three to seven answers options. Two questions we used were: "Which continent did homo sapiens evolve from?" and "Which of the following is a good source of potassium?" The former is a question designed for the topic "Human Evolution", while the latter is designed for the topic "Food and Nutrients". Both, with minor to no alterations, are reasonable questions that people would query a search engine with.</p>
+</body>
+</html>
