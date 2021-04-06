@@ -2,20 +2,37 @@
 <html>
 <body>
 
-<h1>EXAM Darwin's Theory of Evolution Articles and Appendix</h1>
+<h1>EXAM: The Exam Answerability Metric for Evaluating Retrieve-and-Generate Systems</h1>
 
-<h3>Darwin Articles</h3>
-<a href="./L_0432-rerank2_bert.html">Rerank2-bert Darwin article</a>
-<br><br>
-<a href="./L_0432-dangnt-nlp.html">Dangnt-nlp Darwin article</a>
-<br><br>
-<a href="./L_0432-uvabottomup2.html">Uvabottomup2 Darwin article</a>
-<br><br>
-<a href="./L_0432-gold.html">Gold Darwin article</a>
+<h2>Abstract</h2>
+We provide an automatic evaluation measure for systems that retrieve-and-generate comprehensive information for topical information needs. Traditional evaluation in information retrieval relies on manual relevance assessments that are not tolerant to minor changes in language, and hence are  not applicable to information that is derived with methods such as natural language generation. To alleviate this, we offer EXAM, an evaluation paradigm that uses held-out exam questions and an automatic question-answering system to evaluate how well generated responses  can answer follow-up  questions---without knowing the exam questions in advance.
 
-<h3>Appendicies</h3>
+<br><br>
+
+<h2>Appendix</h2>
+
+<h3>Manual Answerability Analysis</h3>
+<p>In our work, we briefly analyze four articles all generated based on the query "Darwin’s theory of evolution". 
+	We expand upon the analysis at the below link.
+</p>
 <a href="./4_4_3_q_analysis.html">Manual Answerability Analysis</a>
-<br><br>
+<br>
+<p>In addition, we provide the four articles, that we analyze above, in the below links. Rerank2-bert and Dangnt-nlp are the two highest rank particpant systems according to EXAM score, Uvabottomup2 is the lowest ranked participant system. The gold article is from the Textbook Question Answer dataset, and is sourced from a middle-school science textbook.</p>
+
+<ul>
+	<li><a href="./L_0432-rerank2_bert.html">Rerank2-bert Darwin article</a></li>
+	<br>
+	<li><a href="./L_0432-dangnt-nlp.html">Dangnt-nlp Darwin article</a></li>
+	<br>
+	<li><a href="./L_0432-uvabottomup2.html">Uvabottomup2 Darwin article</a></li>
+	<br>
+	<li><a href="./L_0432-gold.html">Gold Darwin article</a></li>
+</ul>
+
+
+<h3>Manual Question Analysis</h3>
+<p>In our work, we examine the results of scoring the sixteen particpant systems with ten manually-created, natural-sounding questions. We provide
+	some additional detail and the 10 questions in the following link</p>
 <a href="./4_5_manual_question_analysis.html">Manual Question Analysis</a>
 
 </body>
