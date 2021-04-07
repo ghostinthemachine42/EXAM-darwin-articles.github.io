@@ -68,12 +68,13 @@
 </tr>
 </tbody>
 </table>
-<p><i>Appendix Table: Answerability of articles for query “Darwin’s Theory” by humans (H) versus the Q/A system. In some cases a partial answer was included or inference required.</i></p>
+<p><i>Appendix Table: Answerability of articles for query “Darwin’s Theory of Evolution” by humans (H) versus the Q/A system (Q/A). 
+"Part" denotes cases where a partial answer is included or inference is required.</i></p>
 
 <br><br>
 
 <p>We inspect the query “Darwin’s theory of evolution” in more detail. Participating systems were asked to cover the following sub-topics: the theory, the voyage of Darwin’s vessel, giant tortoises, the finches, plant and animal breeding, and influences of other scientists.</p>
-<p>We compare the two strongest systems, rerank2_bert and dangnt-nlp, with a lower ranked system uvabottomup2 and the gold article. While articles of the two top systems emphasize different content, the subjective quality of both is very convincing to a human, covering all sub-topics with little redundancy. The gold article covers all subtopics with less depth. The lowest ranked system, however, does not cover some of the subtopics and exhibits a high degree of redundancy.</p>
+<p>We compare the two strongest systems, rerank2-bert and dangnt-nlp, with the lowest ranked system, uvabottomup2, and the gold article. While articles of the top two systems emphasize different content, the subjective quality of both is very convincing to a human, covering all sub-topics with little redundancy. The gold article covers all subtopics with less depth. The lowest ranked system, however, does not cover some of the subtopics and exhibits a high degree of redundancy.</p>
 <p>We analyze whether the articles contain answers to three TQA exam questions, (**) marks the correct answer:</p>
 <ul>
 <li><p>Darwin observed that the environment on different Galapagos Islands was correlated with the shell shape of _ ?<br />
@@ -89,11 +90,11 @@ a: 1801 / b: 1830 / c: 1859 (**) / d: 1901</p></li>
 </ul></li>
 </ul>
 <p>The gold article contains direct answers to each of the three questions, such as Q1: “Each island had tortoises with a different shell shape.” or Q3: “The 16 Galapagos Islands”</p>
-<p>For Q1, none of the generated articles contained a direct answer. However the two best articles mentioned tortoise, the correct answer, more frequently than other candidates. The low ranked system does not mention tortoise or other answers.</p>
-<p>For Q2, dangnt-nlp mentions the book but not its year. Rerank2-bert mentions the book and year “He published the theory in On the Origin of Species in 1859”. The low ranked system repeatedly mentions “In 1859, Darwin placed the theory of organic evolution on a new footing”, without mentioning the book title directly.</p>
+<p>For Q1, none of the generated articles contained a direct answer. However the two best articles mentioned tortoise, the correct answer, more frequently than other candidates. The lowest ranked system does not mention tortoise or other answers.</p>
+<p>For Q2, dangnt-nlp mentions the book but not its year. Rerank2-bert mentions the book and year “He published the theory in On the Origin of Species in 1859”. The lowest ranked system repeatedly mentions “In 1859, Darwin placed the theory of organic evolution on a new footing”, without mentioning the book title directly.</p>
 <p>Q3, is a very specific question. None of the retrieved-and-generated articles contain a direct answer. However, the two best systems mention habitat of tortoises and finches, from which answer "d" can be excluded via inference. There are no mentions of the Atlantic Ocean or the last stop or that there are sixteen islands, which means it is impossible to answer this question with those articles.</p>
-<p>The automatic Q/A system mirrors this quality assessment in the above table. Among all questions for this query, only two are correctly answered by uvabottomup2 submission, seven by dangnt-nlp submission, nine by rerank2-bert submission, but only five based on the gold article.</p>
-<p>This observation is in line with our earlier finding: the overall EXAM score of 0.166 on gold articles is slightly exceeded by the two best systems. It is possible for generated articles to mention some facts multiple times, which makes it easier for the Q/A system to extract the right answer. In contrast, the gold articles are often shorter and require inference to answer the questions correctly. After all, they were designed to be read by middle school students.</p>
+<p>The automatic Q/A system mirrors our manual quality assessment in the above table. Among all questions for this query, only two are correctly answered by uvabottomup2, seven by dangnt-nlp, nine by rerank2-bert, but only five based on the gold article.</p>
+<p>This observation aligns with our earlier finding: the overall EXAM score of 0.166 on gold articles is slightly exceeded by the two best systems. It is possible for generated articles to mention some facts multiple times, which makes it easier for the Q/A system to extract the right answer. In contrast, the gold articles are often shorter and require inference to answer the questions correctly. After all, they were designed to be read by middle school students.</p>
 
 <a href="./index.html"># back to main #</a>
 
